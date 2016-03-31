@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form in class</title>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body>
+	<div id="container">
+		<div id="formheader"><h1 id="formname">Course Application</h1></div>
+			<form>
+				<fieldset>
+    				<legend>Your Contact Info</legend>
+    					<label id="name">Your Name
+    						<input type="text" placeholder="First" size="20"></input>
+    						<input type="text" placeholder="Last" size="20"></input>
+    					</label>	
+    					<label id="phone">Phone Number</label>
+    						<input type="tel" size="3"></input> - <input type="tel" size="3"></input> - 
+    						<input type="tel" size="4"></input>
+    					<br>
+    					<label>Address
+    						<input type="text" size="40" placeholder="Street Address"></input><br>
+    						<input type="text" size="40" placeholder="Address Line 2"></input><br>
+    						<input type="text" size="20" placeholder="City"size="10"></input>
+    						<input type="text" placeholder="State" size="10"></input>
+    						<input type="text" placeholder="Postal Code" size="16"></input>
+    					</label><br>
+				</fieldset>
+				<fieldset>
+    				<legend>Skills & Interests</legend>
+    					<label>Course
+    						<select id="course">
+  								<option selected="Select One">Select One</option>
+  									<optgroup label="Web Development">
+  										<option value="frontend">Front-end</option><br>
+  										<option value="backend">Back-end</option></option>
+  									<optgroup label="Design">
+  										<option value="visualdesign">Visual Design</option><br>
+  										<option value="userexperience">User Experience</option></option>
+							</select></label><br>
+    					<label>Past Experience
+    						<textarea rows="4" cols="50">
+							</textarea>
+						</label>
+				</fieldset>
+				<fieldset>
+    				<legend>Anything Else?</legend>
+    					<label>Referral
+    						<select>
+								<option value="Default" selected="None">None</option>
+								<option value="Friend">Friend</option>
+  								<option value="instructor">Instructor</option>
+  								<option value="Employer">Online</option>
+  								
+							</select></label><br>
+    					<label>Comments
+    						<textarea rows="4" cols="50">
+							</textarea>
+						</label>
+				</fieldset>
+				<input class="butt" type="button" value="Save Draft">
+				<input class="butt" type="submit">
+		</div>
+	</form>
+</body>
+</html>
